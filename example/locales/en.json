@@ -1,0 +1,17 @@
+{
+  "hero": {
+    "eyebrow": "Translate without rebuilding",
+    "title": "One small patch. Every language.",
+    "description": "Keep translations in Git and make every website easier to understand."
+  },
+  "form": {
+    "label": "Email address",
+    "placeholder": "you@example.com"
+  },
+  "community": {
+    "contributors": {
+      "one": "{{count}} contributor is translating this project.",
+      "other": "{{count}} contributors are translating this project."
+    }
+  }
+}

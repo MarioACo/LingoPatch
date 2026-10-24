@@ -1,0 +1,62 @@
+:root {
+  color-scheme: dark;
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+  background: #0d1117;
+  color: #e6edf3;
+}
+
+body {
+  display: grid;
+  min-height: 100vh;
+  margin: 0;
+  place-items: center;
+}
+
+main {
+  width: min(42rem, calc(100% - 3rem));
+}
+
+nav {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 4rem;
+}
+
+button,
+input {
+  border: 1px solid #30363d;
+  border-radius: 0.6rem;
+  background: #161b22;
+  color: inherit;
+  padding: 0.75rem 1rem;
+}
+
+button[aria-pressed="true"] {
+  border-color: #a371f7;
+  background: #6e40c9;
+}
+
+h1 {
+  max-width: 12ch;
+  margin: 0.25rem 0 1rem;
+  font-size: clamp(2.5rem, 8vw, 5rem);
+  line-height: 0.95;
+}
+
+.eyebrow {
+  color: #bc8cff;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+label,
+input {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+label {
+  margin: 2rem 0 0.5rem;
+}

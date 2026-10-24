@@ -1,0 +1,17 @@
+{
+  "hero": {
+    "eyebrow": "Traduce sin reconstruir",
+    "title": "Un pequeño parche. Todos los idiomas.",
+    "description": "Guarda las traducciones en Git y facilita que todos comprendan tu sitio."
+  },
+  "form": {
+    "label": "Correo electrónico",
+    "placeholder": "tu@ejemplo.com"
+  },
+  "community": {
+    "contributors": {
+      "one": "{{count}} colaborador está traduciendo este proyecto.",
+      "other": "{{count}} colaboradores están traduciendo este proyecto."
+    }
+  }
+}

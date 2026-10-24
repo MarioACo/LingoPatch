@@ -1,0 +1,37 @@
+{
+  "name": "lingopatch",
+  "version": "0.1.0",
+  "description": "Tiny, framework-agnostic, Git-friendly website localization.",
+  "type": "module",
+  "types": "./src/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./src/index.d.ts",
+      "import": "./src/index.js",
+      "default": "./src/index.js"
+    },
+    "./auto": "./src/auto.js"
+  },
+  "files": [
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test",
+    "check": "node --check src/index.js && node --check src/messages.js && node --check src/auto.js && node --test"
+  },
+  "keywords": [
+    "i18n",
+    "internationalization",
+    "localization",
+    "translation",
+    "browser"
+  ],
+  "author": "MarioACo",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "sideEffects": false
+}

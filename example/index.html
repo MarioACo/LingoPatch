@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>LingoPatch demo</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main>
+      <nav aria-label="Language selector">
+        <button type="button" data-lingopatch-language="en">English</button>
+        <button type="button" data-lingopatch-language="es">Español</button>
+        <button type="button" data-lingopatch-language="fr">Français</button>
+      </nav>
+
+      <p class="eyebrow" data-i18n="hero.eyebrow">Translate without rebuilding</p>
+      <h1 data-i18n="hero.title">One small patch. Every language.</h1>
+      <p data-i18n="hero.description">
+        Keep translations in Git and make every website easier to understand.
+      </p>
+
+      <label for="email" data-i18n="form.label">Email address</label>
+      <input
+        id="email"
+        type="email"
+        data-i18n-attrs="placeholder:form.placeholder, aria-label:form.label"
+        placeholder="you@example.com"
+      />
+
+      <p data-i18n="community.contributors" data-i18n-params='{"count": 12}'>
+        12 contributors are translating this project.
+      </p>
+    </main>
+
+    <script type="module">
+      import { createLingoPatch } from "../src/index.js";
+
+      window.demo = createLingoPatch({
+        defaultLanguage: "en",
+        languages: ["en", "es", "fr"],
+        translations: "./locales/{language}.json"
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,17 @@
+{
+  "hero": {
+    "eyebrow": "Traduisez sans reconstruire",
+    "title": "Un petit patch. Toutes les langues.",
+    "description": "Conservez les traductions dans Git et rendez chaque site plus facile à comprendre."
+  },
+  "form": {
+    "label": "Adresse e-mail",
+    "placeholder": "vous@exemple.fr"
+  },
+  "community": {
+    "contributors": {
+      "one": "{{count}} personne traduit ce projet.",
+      "other": "{{count}} personnes traduisent ce projet."
+    }
+  }
+}
